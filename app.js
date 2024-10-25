@@ -24,6 +24,7 @@ console.log(e);
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes); // Added user routes
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
